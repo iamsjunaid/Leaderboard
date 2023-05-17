@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://icon-library.com/images/leader-board-icon/leader-board-icon-12.jpg"
+        type="image/x-icon">
+    <title>Leaderboard</title>
+<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+
+<body>
+    <h1>Leaderboard</h1>
+    <section class="main-container">
+
+        <div class="scores-container">
+            <div class="header-btn-container">
+                <h2>Recent Scores</h2>
+                <Button class="refresh-btn">Refresh</Button>
+            </div>
+            <div class="score-board">
+                <ul>
+                    <li>Name:100</li>
+                    <li>Name:20</li>
+                    <li>Name:75</li>
+                    <li>Name:80</li>
+                    <li>Name:41</li>
+                    <li>Name:25</li>
+                </ul>
+            </div>
+        </div>
+        <form class="add-score-form">
+            <h2>Add your score</h2>
+            <input type="text" placeholder="Your name" id="name-input">
+            <input type="text" placeholder="Your score" id="score-input">
+            <div class="submit-btn-container">
+
+                <button id="submit-btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
