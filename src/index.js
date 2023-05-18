@@ -51,4 +51,6 @@ form.addEventListener('submit', async (e) => {
   } catch (error) {
     console.log(error); // eslint-disable-line no-console
   }
+
+  form.reset();
 });
