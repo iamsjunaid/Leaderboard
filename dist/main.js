@@ -26,11 +26,13 @@ refreshBtn.addEventListener('click', async () => {
     scoreBoard.innerHTML = '';
 
     // Add the new scores
+    const ul = document.createElement('ul');
     data.result.forEach((element) => {
       const li = document.createElement('li');
-      li.innerHTML = `${element.user} : ${element.score}`;
-      scoreBoard.appendChild(li);
+      li.innerHTML = `<span class="player-score">${element.user} : ${element.score}</span>`;
+      ul.appendChild(li);
     });
+    scoreBoard.appendChild(ul);
   } catch (error) {
     console.log(error); // eslint-disable-line no-console
   }
@@ -368,13 +370,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(12), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(13), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap);"]);
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap);"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\n.main-container {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  justify-content: center;\r\n  height: 100vh;\r\n  gap: 2em;\r\n  margin-top: -8em;\r\n}\r\n\r\n.header-btn-container {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 1em;\r\n}\r\n\r\n.add-score-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  height: 100vh;\r\n  gap: 1em;\r\n}\r\n\r\n.refresh-btn {\r\n  height: 2em;\r\n}\r\n\r\n.submit-btn-container {\r\n  display: flex;\r\n  justify-content: flex-end;\r\n  width: 100%;\r\n}\r\n\r\n.score-board {\r\n  border: 2px solid black;\r\n}\r\n\r\n.score-board li {\r\n  list-style: none;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  font-family: 'Indie Flower', cursive;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  margin: 0;\r\n}\r\n\r\n#form {\r\n  background-color: #222362;\r\n  padding: 1em;\r\n  box-shadow: 2px 2px 2px 1px #ffd700;\r\n}\r\n\r\ninput,\r\nbutton {\r\n  font-family: 'Indie Flower', cursive;\r\n  border: 2px solid #ffd700;\r\n}\r\n\r\ninput:focus {\r\n  border: 2px solid #222362;\r\n  outline: none;\r\n}\r\n\r\ninput:hover {\r\n  border: 2px solid #222362;\r\n}\r\n\r\nbutton {\r\n  background-color: #222362;\r\n  color: #fff;\r\n  width: 8em;\r\n}\r\n\r\n#score-board,\r\nbutton {\r\n  box-shadow: 2px 2px 2px 1px #222632;\r\n}\r\n\r\nbutton:hover {\r\n  background-color: #ffd700;\r\n  color: #222362;\r\n  cursor: pointer;\r\n}\r\n\r\n.heading {\r\n  display: flex;\r\n  justify-content: center;\r\n  background-color: #222362;\r\n  margin: 0;\r\n  padding: 0.2em;\r\n  color: #fff !important;\r\n  text-shadow: 0 0 5px #ffd700;\r\n  font-size: 3em !important;\r\n}\r\n\r\n.main-container {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  justify-content: center;\r\n  height: 30em;\r\n  gap: 2em;\r\n\r\n  /* margin-top: -8em; */\r\n  width: 80%;\r\n  margin: 0 auto;\r\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);\r\n  border: 8px solid #ffd700;\r\n  background-color: #4e51a2;\r\n  transition: 0.5s ease-in;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n}\r\n\r\n.header-btn-container {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 1em;\r\n}\r\n\r\n.add-score-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  height: 100vh;\r\n  gap: 1em;\r\n}\r\n\r\n.refresh-btn {\r\n  height: 2em;\r\n}\r\n\r\n.submit-btn-container {\r\n  display: flex;\r\n  justify-content: flex-end;\r\n  width: 100%;\r\n  margin-top: 1em;\r\n}\r\n\r\n#score-board {\r\n  /* border: 2px solid #ffd700; */\r\n\r\n  /* position: fixed; */\r\n  background-color: #222362;\r\n  color: #fff;\r\n}\r\n\r\nul li:nth-child(odd) {\r\n  background-color: #ffd700;\r\n  color: #222362;\r\n}\r\n\r\n#score-board li {\r\n  list-style: none;\r\n}\r\n\r\n.text {\r\n  font-size: 1.5em;\r\n  font-weight: bold;\r\n  color: #ffd700;\r\n}\r\n\r\nul {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.player-score {\r\n  font-weight: bold;\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -478,6 +487,49 @@ module.exports = function (cssWithMappingToString) {
   };
   return list;
 };
+
+/***/ }),
+/* 11 */
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
+};
+
+/***/ }),
+/* 12 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "0c7405782abccb519eb8.webp";
+
+/***/ }),
+/* 13 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "d77ffa0beabb4b075e2e.png";
 
 /***/ })
 ],

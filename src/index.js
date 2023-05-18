@@ -19,11 +19,13 @@ refreshBtn.addEventListener('click', async () => {
     scoreBoard.innerHTML = '';
 
     // Add the new scores
+    const ul = document.createElement('ul');
     data.result.forEach((element) => {
       const li = document.createElement('li');
-      li.innerHTML = `${element.user} : ${element.score}`;
-      scoreBoard.appendChild(li);
+      li.innerHTML = `<span class="player-score">${element.user} : ${element.score}</span>`;
+      ul.appendChild(li);
     });
+    scoreBoard.appendChild(ul);
   } catch (error) {
     console.log(error); // eslint-disable-line no-console
   }

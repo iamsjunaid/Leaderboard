@@ -1,7 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Indie Flower', cursive;
+  background-image: url('./img/bg-img.webp');
+  margin: 0;
+}
+
+#form {
+  background-color: #222362;
+  padding: 1em;
+  box-shadow: 2px 2px 2px 1px #ffd700;
+}
+
+input,
+button {
+  font-family: 'Indie Flower', cursive;
+  border: 2px solid #ffd700;
+}
+
+input:focus {
+  border: 2px solid #222362;
+  outline: none;
+}
+
+input:hover {
+  border: 2px solid #222362;
+}
+
+button {
+  background-color: #222362;
+  color: #fff;
+  width: 8em;
+}
+
+#score-board,
+button {
+  box-shadow: 2px 2px 2px 1px #222632;
+}
+
+button:hover {
+  background-color: #ffd700;
+  color: #222362;
+  cursor: pointer;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  background-color: #222362;
+  margin: 0;
+  padding: 0.2em;
+  color: #fff !important;
+  text-shadow: 0 0 5px #ffd700;
+  font-size: 3em !important;
 }
 
 .main-container {
@@ -9,9 +60,19 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 30em;
   gap: 2em;
-  margin-top: -8em;
+
+  /* margin-top: -8em; */
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 8px solid #ffd700;
+  background-color: #4e51a2;
+  transition: 0.5s ease-in;
+  background-image: url('./img/bg-container.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-btn-container {
@@ -37,12 +98,37 @@ body {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  margin-top: 1em;
 }
 
-.score-board {
-  border: 2px solid black;
+#score-board {
+  /* border: 2px solid #ffd700; */
+
+  /* position: fixed; */
+  background-color: #222362;
+  color: #fff;
 }
 
-.score-board li {
+ul li:nth-child(odd) {
+  background-color: #ffd700;
+  color: #222362;
+}
+
+#score-board li {
   list-style: none;
+}
+
+.text {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.player-score {
+  font-weight: bold;
 }

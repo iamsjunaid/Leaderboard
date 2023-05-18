@@ -84,25 +84,47 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need: To clone or fork and run it in a browser
 
-Open VSCode and type <code>ctrl+P</code>, type
-
-```sh
-  npm install
-```
 
 ### Setup
 
 Clone this repository to your desired folder:
 
+Example commands:
+
 ```sh
-  git clone git@github.com:iamsjunaid/leaderboard.git;
+  cd my-folder
+  git clone
+  https://github.com/iamsjunaid/leaderboard
 ```
+
+using Ubuntu:
+
+```sh
+  cd my-desired-folder
+  git clone 
+  https://github.com/iamsjunaid/leaderboard.git
+```
+
+For more information on how to clone or fork a repository:
+- <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">How to clone a repo</a>
+- <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">How to fork a repo</a>
+
+### Install
+
+There is no installation required.
 
 ### Usage
 
-To run the project just click the Go Live button in the VSCode.
+To run the project, open with **index.html** with any web browser.
+
+For example, for Google Chrome with Ubuntu:
+
+```sh
+  cd Leaderboard-project
+  google-chrome index.html
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
